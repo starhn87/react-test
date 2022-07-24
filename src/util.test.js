@@ -1,23 +1,23 @@
 import { sum, person, toggle, range } from './util';
 
 describe('test util.js file', () => {
-  it('sums 1 + 2 to equal 3', () => {
-    expect(sum(1, 2)).toBe(3);
+  it('sums 27 + 43 to equal 60', () => {
+    expect(sum(27, 43)).toBe(60);
   });
 
-  it('makes a person', () => {
-    expect(person('Kim', 20)).toEqual({
+  it('make a person', () => {
+    expect(person('Jin', 28)).toEqual({
       name: 'Kim',
-      age: 20,
+      age: 28,
     });
   });
 
-  it('returns false', () => {
+  it('return false', () => {
     expect(toggle(true)).toBeFalsy();
     expect(toggle(true)).not.toBeTruthy();
   });
 
-  it('has 2', () => {
-    expect(range(1, 3)).toContain(2);
+  it('contains 9', () => {
+    expect(range(8, 10)).toContain(9);
   });
 });
